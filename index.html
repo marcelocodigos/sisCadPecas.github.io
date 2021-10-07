@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+   
+    <title>Cadastro de Peças - Senai By:Marcelo Ferreira</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/css.css'>
+   
+</head>
+<body>
+   <main>     
+     <h2> Sistema de Cadastro de Peças By:Marcelo Ferreira </h2>
+     <a href="#">Link diretório GitHub</a><br> 
+     
+     <div id="form-lista-pecas">
+                <form>
+                    <label for="nome">
+                        Nome Peça
+                        <input type="text" id="nome"  required> 
+                    </label>
+                    <label for="peso">
+                        Peso Peça
+                        <input type="number" id="peso" required> 
+                    </label>
+                    <button type="button" id="btn1" onclick="peca.salvar()">Cadastrar</button>
+                    <button type="button" onclick="peca.cancelar()">Cancelar</button>
+                </form>
+            </div>
+
+
+
+
+            <div id="lista-pecas">
+                <table>
+                  <thead>
+                    <tr>
+                        <th id="id">Id</th>
+                        <th>Nome</th>
+                        <th>Peso (g)</th>
+                        <th>Ações</th>
+                    </tr>
+                  </thead>  
+                   <tbody id="tbody">
+
+                   </tbody>  
+                    <!-- <tr>
+                        <td id="id">2</td>
+                        <td>Arrulela Kit C/12</td>
+                        <td>110g</td>
+                        <td id="acoes">Editar | Excluir</td>
+                    </tr>
+                    <tr>
+                        <td id="id">3</td>
+                        <td>Pistão Fan 125 2008</td>
+                        <td>240g </td>
+                        <td id="acoes">Editar | Excluir</td>
+                    </tr>
+                    <tr>
+                        <td id="id">4</td>
+                        <td>Tanque 14,5L Fan 125 2008</td>
+                        <td>3400g</td>
+                        <td id="acoes">Editar  | Excluir</td>
+                    </tr> -->
+                </table>
+            </div>
+
+
+        </main> 
+    <script src='js/script.js'></script>
+</body>
+</html>
