@@ -175,7 +175,7 @@ class Peca{
   }
   //valida campos
   validaCampos(peca){
-      if(this.arrayPecas.length<=10) //Se tiver 10 vagas pode cadastrar
+      if(this.arrayPecas.length<10) //Se tiver 10 vagas pode cadastrar
       {  //true 
         let msg ='';
         if(peca.nomePeca ==''){
