@@ -201,6 +201,7 @@ class Peca{
       }else
       { //Se array pecas tiver mais que 10 não permitir o cadastro
         alert("Limite de 10 peças atingido ! ");
+        this.cancelar();
       }
           
   }
