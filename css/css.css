@@ -99,7 +99,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:600px;
+    /* width:600px; */
 
     
 }
@@ -122,3 +122,23 @@ img{
 #quantidade{
     margin-bottom:10px;
 }
+@media only screen and (min-width : 320px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin:0 auto;
+    }
+    main{
+        max-width:300px;
+        border: 1px solid rgb(206, 206, 206);
+        display: flex;
+      
+    }
+    form{
+        display: flex;
+        
+        max-width: 280px;
+    }
+  }
