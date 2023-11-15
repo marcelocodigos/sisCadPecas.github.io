@@ -134,25 +134,27 @@ class Peca{
    
   }
   //Atulizar recebe os dados do Metodo PRepara Edição
- atualizar(id,peca){
-   //Acessando o id do produto que quero editar
-   for (let i = 0; i < this.arrayPecas.length; i++) {
-      //Verificando seu o id peças é igual ao que eu quero editar
-      if(this.arrayPecas[i].id==id){
-         if(confirm("Deseja realmente editar ? ")){
-          this.arrayPecas[i].nomePeca = peca.nomePeca;
-          this.arrayPecas[i].pesoPeca = peca.pesoPeca;
-          alert("A edição foi um sucesso !");
-          this.cancelar();
-         }else
-         {
-          this.cancelar();
-         }
-         
-      }
-     
-   }
- } 
+  atualizar(id, peca) {
+    // Acessando o id do produto que quero editar
+    for (let i = 0; i < this.arrayPecas.length; i++) {
+        // Verificando se o id da peça é igual ao que eu quero editar
+        if (this.arrayPecas[i].id == id) {
+            if (confirm("Deseja realmente editar ? ")) {
+                this.arrayPecas[i].nomePeca = peca.nomePeca;
+                this.arrayPecas[i].pesoPeca = peca.pesoPeca;
+                alert("A edição foi um sucesso !");
+                this.cancelar();
+                this.listaTabela();
+                this.editId = null; // Adicionando esta linha para redefinir o editId para null
+            } else {
+                this.cancelar();
+            }
+        }
+    }
+}
+
+
+ 
   //Função chamada quando o usuário clica no X de Deletar
   deletar(id){
     //Veirifica se o id é o mesmo que eu quero deletar em array pecas
